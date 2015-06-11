@@ -1,0 +1,29 @@
+<?xml version="1.0"?>
+
+<config>
+    <modules>
+        <Yli_OptionalFilter>
+            <version>0.1.0</version>
+        </Yli_OptionalFilter>
+    </modules>
+    <global>
+           <models>
+              	 <filter>
+	                    <class>Yli_OptionalFilter_Model</class>
+	             </filter>  
+	             <catalog>
+	             		<rewrite>
+	             			<layer>Yli_OptionalFilter_Model_Catalog_Layer</layer>
+	             		</rewrite>
+	             </catalog>
+           </models>
+           <resources>
+                <filter_setup>
+                    <setup>
+                        <module>Yli_OptionalFilter</module>
+                        <class>Mage_Catalog_Model_Resource_Setup</class>
+                    </setup>
+                </filter_setup>
+        </resources>
+    </global>
+</config>
